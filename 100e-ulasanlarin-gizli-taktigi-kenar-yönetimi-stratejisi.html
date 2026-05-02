@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Yazı Başlığı | Hedef 100</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --primary: #38bdf8; 
+            --accent: #f472b6; 
+            --bg: #0f172a; 
+            --card: #1e293b; 
+            --text: #f1f5f9; 
+            --success: #22c55e;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            background-color: var(--bg); 
+            color: var(--text); 
+            font-family: 'Poppins', sans-serif; 
+            line-height: 1.8; 
+            padding: 20px; 
+            max-width: 800px; 
+            margin: 0 auto; 
+        }
+        
+        /* Üst Menü */
+        .nav-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 40px; 
+            border-bottom: 1px solid rgba(56, 189, 248, 0.2); 
+            padding-bottom: 20px; 
+        }
+        
+        .nav-back { 
+            color: var(--accent); 
+            text-decoration: none; 
+            font-family: 'Orbitron'; 
+            font-size: 0.8rem; 
+            font-weight: bold; 
+            transition: 0.3s;
+        }
+        
+        .nav-back:hover { opacity: 0.8; transform: translateX(-5px); }
+        
+        /* İçerik Yapısı */
+        h1 { 
+            font-family: 'Orbitron'; 
+            color: var(--primary); 
+            font-size: 2rem; 
+            line-height: 1.3; 
+            margin-bottom: 15px; 
+            letter-spacing: 1px;
+        }
+        
+        .meta-info { 
+            font-size: 0.8rem; 
+            opacity: 0.6; 
+            margin-bottom: 40px; 
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 20px; 
+            border-left: 2px solid var(--accent);
+            padding-left: 15px;
+        }
+        
+        .blog-content { font-size: 1.05rem; }
+        
+        .blog-content h2 { 
+            color: var(--primary); 
+            font-size: 1.5rem; 
+            margin: 40px 0 20px 0; 
+            font-family: 'Orbitron'; 
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding-bottom: 10px;
+        }
+        
+        .blog-content p { margin-bottom: 25px; font-weight: 300; }
+        
+        .blog-content img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 15px; 
+            margin: 30px 0; 
+            border: 1px solid rgba(56, 189, 248, 0.2); 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        /* Vurgu Kutusu */
+        .highlight-box { 
+            background: rgba(56, 189, 248, 0.05); 
+            border-left: 4px solid var(--primary); 
+            padding: 25px; 
+            border-radius: 0 15px 15px 0; 
+            margin: 35px 0; 
+            font-style: italic;
+            color: var(--primary);
+        }
+        
+        /* CTA Butonu */
+        .cta-container {
+            margin-top: 60px;
+            padding: 40px;
+            background: var(--card);
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(56, 189, 248, 0.1);
+        }
+        
+        .cta-btn { 
+            display: inline-block; 
+            background: var(--success); 
+            color: white; 
+            text-align: center; 
+            padding: 18px 35px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-family: 'Orbitron'; 
+            font-weight: bold; 
+            font-size: 1rem;
+            transition: 0.3s; 
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+        }
+        
+        .cta-btn:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
+            filter: brightness(1.1); 
+        }
+
+        .footer { 
+            margin: 80px 0 40px 0; 
+            text-align: center; 
+            font-size: 0.75rem; 
+            opacity: 0.5; 
+            font-family: 'Orbitron'; 
+            letter-spacing: 2px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="nav-header">
+        <a href="index.html" class="nav-back">← OYUNA DÖN</a>
+        <div style="font-family: 'Orbitron'; color: var(--primary); font-size: 0.8rem; letter-spacing: 1px;">HEDEF 100 BLOG</div>
+    </header>
+
+<article class="blog-content">
+    <!-- İÇERİK BAŞLANGICI -->
+    <h1>100'e Ulaşanların Gizli Taktiği: Kenar Yönetimi Stratejisi</h1>
+    
+    <div class="meta-info">
+        <span>📅 2 Mayıs 2026</span>
+        <span>✍️ Uzm. Dr. Yasin Yıldız</span>
+        <span>⏱️ 5 dk okuma</span>
+    </div>
+
+    <p>Hedef 100 oyununda 50 veya 60 puana ulaşmak birçok oyuncu için kolaydır; ancak gerçek ustalık 80 barajı geçildiğinde başlar. Bu noktada oyun alanı daralır ve her hamle altın değerindedir. Yapılan analizler, 100 tam puana ulaşan oyuncuların ortak bir sırrı olduğunu gösteriyor: <strong>Kenar ve Köşe Yönetimi.</strong></p>
+
+    <div class="highlight-box">
+        "Oyunun kaderi merkezde değil, köşelerde belirlenir. Kenarları kontrol eden, oyunun sonunu da kontrol eder."
+    </div>
+
+    <h2>Neden Önce Kenarlar?</h2>
+    <p>Izgara tabanlı strateji oyunlarında merkez kareler, her yöne (yatay, dikey, çapraz) en fazla çıkış imkanı sunan alanlardır[cite: 3]. Eğer bu "kaçış noktalarını" oyunun başında harcarsanız, sona yaklaştığınızda kenarda sıkışıp kalan tek bir kareye geri dönecek köprünüz kalmaz[cite: 3]. Bu yüzden usta oyuncular, en zor ulaşılan alanlar olan köşeleri ve kenar şeritlerini erkenden kapatma eğilimindedir[cite: 3].</p>
+
+    <h2>Dıştan İçe Sarmal Metodu</h2>
+    <p>En etkili taktiklerden biri, oyuna herhangi bir köşeden başlayıp 10x10'luk alanın dış çerçevesini bir sarmal gibi takip ederek doldurmaktır[cite: 3]. Kenarları temizlediğinizde, oyunun son aşaması olan "final hamleleri" için merkezdeki çok yönlü kareleri birer joker gibi saklamış olursunuz[cite: 3]. Bu strateji, çıkmaz sokaklara girme ihtimalinizi %70 oranında azaltır.</p>
+
+    <img src="https://acil42.com/wp-content/uploads/2026/05/blog-gorsel-8.jpg" alt="Hedef 100 Kenar Yönetimi Taktiği">
+
+    <h2>Çapraz Hamlelerin Stratejik Kullanımı</h2>
+    <p>Çaprazda 2 kare zıplama kuralı, genellikle kenarlar arasında hızlı geçiş yapmak için kullanılır[cite: 3]. Düz hamlelerle (3 kare) bir kenarı bitirirken, köşeye sıkışmadan önce çapraz hamle ile karşı kenara veya bir iç sıraya zıplamak, oyunun akışkanlığını sağlar[cite: 3]. Eğer sadece düz hamlelere odaklanırsanız, ızgaranın bir yarısını tamamen boş bırakıp oraya bir daha asla dönemeyebilirsiniz.</p>
+
+    <h2>Geri Al Hakkını Planlı Kullanın</h2>
+    <p>Kenar yönetimi yaparken bir köşeyi açık unuttuğunuzu fark ettiğiniz an, skorunuz kaç olursa olsun "Geri Al" butonuna başvurmaktan çekinmeyin[cite: 3]. Unutulan tek bir köşe karesi, 99 puanda kalmanıza neden olan o meşhur "tek boşluk"tur[cite: 3].</p>
+
+    <p>Stratejinizi test etmenin en iyi yolu uygulamadır. Kenar yönetimini deneyerek kendi rekorunuzu kırmaya hazır mısınız?[cite: 3]</p>
+
+    <div class="cta-container">
+        <p style="margin-bottom: 20px; font-family: 'Orbitron'; font-size: 0.9rem;">Yeni taktiği denemek için hemen başla!</p>
+        <a href="index.html" class="cta-btn">STRATEJİNİ UYGULA VE OYNA!</a>
+    </div>
+</article>
+
+
+<footer class="footer">
+        © 2026 HEDEF100.COM | TÜM HAKLARI SAKLIDIR.
+    </footer>
+
+</body>
+</html>

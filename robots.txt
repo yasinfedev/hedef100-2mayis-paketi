@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap lokasyonunu belirtmek botlar için kolaylık sağlar
+Sitemap: https://hedef100.com/sitemap.xml

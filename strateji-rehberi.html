@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strateji ve Taktik Rehberi: İlk Tam Puan Yolculuğu | Hedef 100</title>
+    <meta name="description" content="Hedef 100 oyununda 100 tam puana ulaşmak için usta işi stratejiler. Sarmal metodu, kenar yönetimi ve hamle ekonomisi hakkında detaylı rehber.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #38bdf8;
+            --accent: #f472b6;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f1f5f9;
+            --success: #22c55e;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text);
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .nav-back {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-family: 'Orbitron';
+            font-size: 0.8rem;
+            transition: 0.3s;
+        }
+
+        .nav-back:hover { opacity: 0.8; transform: translateX(-5px); }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--primary);
+            font-size: 1.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .guide-intro {
+            font-size: 0.9rem;
+            color: var(--accent);
+            font-family: 'Orbitron';
+            margin-top: 10px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2::before { content: '>'; color: var(--accent); font-weight: bold; }
+
+        .strategy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(15, 23, 42, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .strategy-table th, .strategy-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.85rem;
+        }
+
+        .strategy-table th {
+            color: var(--primary);
+            font-family: 'Orbitron';
+            font-size: 0.7rem;
+            background: rgba(56, 189, 248, 0.1);
+        }
+
+        .note-box {
+            background: rgba(34, 197, 94, 0.05);
+            border: 1px solid var(--success);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .note-box strong { color: var(--success); font-family: 'Orbitron'; font-size: 0.75rem; display: block; }
+
+        .designer-note {
+            background: rgba(244, 114, 182, 0.05);
+            border-left: 4px solid var(--accent);
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        .designer-note strong { color: var(--accent); font-family: 'Orbitron'; font-size: 0.75rem; font-style: normal; display: block; }
+
+        .step-list { list-style: none; padding: 0; }
+        .step-list li { margin-bottom: 15px; padding-left: 35px; position: relative; }
+        .step-list li span { position: absolute; left: 0; color: var(--primary); font-family: 'Orbitron'; font-weight: bold; }
+
+        .author-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.7rem;
+            opacity: 0.5;
+            font-family: 'Orbitron';
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.3rem; }
+            section { padding: 20px; }
+            .strategy-table { display: block; overflow-x: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="blog.html" class="nav-back">← BLOG'A DÖN</a>
+
+        <header>
+            <h1>İlk Tam Puan Yolculuğu</h1>
+            <div class="guide-intro">Strateji ve Taktik Rehberi</div>
+        </header>
+
+        <!-- BÖLÜM 1 -->
+        <section>
+            <h2>1. Zihinsel Odaklanmanın Gücü</h2>
+            <p>Hedef 100, yalnızca sayıları bir ızgaraya yerleştirdiğiniz bir oyun değil; dijital dünyanın gürültüsünden sıyrılıp zihninizi "nitelikli bir odaklanma" sürecine sokan bir disiplin aracıdır.</p>
+            <div class="designer-note">
+                "Gerçek dinlenme, zihni boşaltmak değil; onu kaosun içinden çıkarıp anlamlı bir düzenin içine yerleştirmektir."[cite: 3]
+            </div>
+        </section>
+
+        <!-- BÖLÜM 2 -->
+        <section>
+            <h2>2. Hareket Mekanizması</h2>
+            <p>Izgaradaki her boş kare bir olasılıkken, yaptığınız her hamle bu olasılıklar ağacını budar. 80. kareden sonra alanın daralması, zihni yoğun bir baskı altına sokar[cite: 1, 3].</p>
+            
+            
+
+            <table class="strategy-table">
+                <thead>
+                    <tr>
+                        <th>HAMLE TİPİ</th>
+                        <th>KURAL</th>
+                        <th>STRATEJİK AVANTAJ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Yatay ve Dikey</strong></td>
+                        <td>3 Kare Zıplama</td>
+                        <td>Bölgesel İzolasyonu Engellemek.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Çapraz</strong></td>
+                        <td>2 Kare Zıplama</td>
+                        <td>Çıkmaz Sokak Manevrası ve iç sıralara sızma.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note-box">
+                <strong>EĞİTMEN NOTU:</strong> Bu kurallar sadece yön değil, "alan ekonomisi" yönetimidir.
+            </div>
+        </section>
+
+        <!-- BÖLÜM 3 -->
+        <section>
+            <h2>3. En Büyük Tuzak: Merkeze Hapsolmak</h2>
+            <p>Merkez kareler, başlangıçta her yöne çıkış imkanı sunduğu için sahte bir güvenlik hissi verir[cite: 3]. Ancak bu potansiyeli erkenden tüketmek, oyun sonunda sizi dış çeperde geri dönüşü olmayan bir yola sokar.</p>
+            <p>Merkez erkenden boşaltıldığında, ızgaranın iki ucu arasındaki "kaçış köprüleri" yıkılmış olur.</p>
+        </section>
+
+        <!-- BÖLÜM 4 -->
+        <section>
+            <h2>4. Ustaların Sırrı: Kenar ve Köşe Yönetimi</h2>
+            <p>Köşeler ve kenarlar, en az bağlantı noktasına sahip bölgelerdir. Bu alanları oyunun başında temizlemek, ileride yaşanacak tıkanmaları %70 oranında önler[cite: 3].</p>
+            <div class="designer-note">
+                <strong>TASARIMCI PERSPEKTİFİ:</strong> Merkez kareler, 8 yöne bağlantı potansiyeliyle oyunun sonundaki zorlu bölgeleri birbirine bağlayan stratejik sigortalardır.
+            </div>
+        </section>
+
+        <!-- BÖLÜM 5 -->
+        <section>
+            <h2>5. Dıştan İçe Sarmal Metodu</h2>
+            <ul class="step-list">
+                <li><span>01.</span> <strong>Köşeden Başlayın:</strong> 10x10'luk alanın herhangi bir köşesini operasyon merkeziniz seçin.</li>
+                <li><span>02.</span> <strong>Dış Çerçeveyi Temizleyin:</strong> Dış halkayı doldururken iç halkaya geçiş için stratejik boşluklar bırakın.</li>
+                <li><span>03.</span> <strong>Merkezi Sona Saklayın:</strong> Dış çeper temizlendikten sonra merkez kareleri "final manevrası" için kullanın.</li>
+            </ul>
+        </section>
+
+        <!-- BÖLÜM 6 -->
+        <section>
+            <h2>6. "Geri Al" Butonu: Stratejik Manevra</h2>
+            <p>Geri Al (Undo) butonu, sadece yanlış tıklamalar için bir silgi değildir[cite: 3]. Rota tıkandığında veya bir köşeyi açıkta bıraktığınızı fark ettiğinizde bu butonu bir "zaman makinesi" olarak kullanın[cite: 4].</p>
+            <div class="designer-note">
+                <strong>TASARIMCI NOTU:</strong> Geri al butonu, hataya yol açan düşünme biçiminizi düzeltmek için oradadır[cite: 3].
+            </div>
+        </section>
+
+        <section>
+            <h2>7. Sabır ve Matematiğin Dansı</h2>
+            <p>100 puana ulaşmak, çalışma belleğinizi ve uzamsal algınızı aynı potada eritebildiğinizin kanıtıdır[cite: 1, 3]. Her hamle zihninizde yeni bir nöral yol açar.</p>
+        </section>
+
+        <div class="author-section">
+            <p><em>Hedef100 Oyunu güven, özveri ve tecrübe ile hazırlanmıştır.</em></p>
+            <p><strong>Uzm. Dr. Yasin Yıldız</strong></p>
+        </div>
+
+        <div class="footer">
+            © 2026 HEDEF100.COM | STRATEJİ REHBERİ
+        </div>
+    </div>
+
+</body>
+</html>

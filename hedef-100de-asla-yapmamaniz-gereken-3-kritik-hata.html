@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Yazı Başlığı | Hedef 100</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --primary: #38bdf8; 
+            --accent: #f472b6; 
+            --bg: #0f172a; 
+            --card: #1e293b; 
+            --text: #f1f5f9; 
+            --success: #22c55e;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            background-color: var(--bg); 
+            color: var(--text); 
+            font-family: 'Poppins', sans-serif; 
+            line-height: 1.8; 
+            padding: 20px; 
+            max-width: 800px; 
+            margin: 0 auto; 
+        }
+        
+        /* Üst Menü */
+        .nav-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 40px; 
+            border-bottom: 1px solid rgba(56, 189, 248, 0.2); 
+            padding-bottom: 20px; 
+        }
+        
+        .nav-back { 
+            color: var(--accent); 
+            text-decoration: none; 
+            font-family: 'Orbitron'; 
+            font-size: 0.8rem; 
+            font-weight: bold; 
+            transition: 0.3s;
+        }
+        
+        .nav-back:hover { opacity: 0.8; transform: translateX(-5px); }
+        
+        /* İçerik Yapısı */
+        h1 { 
+            font-family: 'Orbitron'; 
+            color: var(--primary); 
+            font-size: 2rem; 
+            line-height: 1.3; 
+            margin-bottom: 15px; 
+            letter-spacing: 1px;
+        }
+        
+        .meta-info { 
+            font-size: 0.8rem; 
+            opacity: 0.6; 
+            margin-bottom: 40px; 
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 20px; 
+            border-left: 2px solid var(--accent);
+            padding-left: 15px;
+        }
+        
+        .blog-content { font-size: 1.05rem; }
+        
+        .blog-content h2 { 
+            color: var(--primary); 
+            font-size: 1.5rem; 
+            margin: 40px 0 20px 0; 
+            font-family: 'Orbitron'; 
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding-bottom: 10px;
+        }
+        
+        .blog-content p { margin-bottom: 25px; font-weight: 300; }
+        
+        .blog-content img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 15px; 
+            margin: 30px 0; 
+            border: 1px solid rgba(56, 189, 248, 0.2); 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        /* Vurgu Kutusu */
+        .highlight-box { 
+            background: rgba(56, 189, 248, 0.05); 
+            border-left: 4px solid var(--primary); 
+            padding: 25px; 
+            border-radius: 0 15px 15px 0; 
+            margin: 35px 0; 
+            font-style: italic;
+            color: var(--primary);
+        }
+        
+        /* CTA Butonu */
+        .cta-container {
+            margin-top: 60px;
+            padding: 40px;
+            background: var(--card);
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(56, 189, 248, 0.1);
+        }
+        
+        .cta-btn { 
+            display: inline-block; 
+            background: var(--success); 
+            color: white; 
+            text-align: center; 
+            padding: 18px 35px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-family: 'Orbitron'; 
+            font-weight: bold; 
+            font-size: 1rem;
+            transition: 0.3s; 
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+        }
+        
+        .cta-btn:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
+            filter: brightness(1.1); 
+        }
+
+        .footer { 
+            margin: 80px 0 40px 0; 
+            text-align: center; 
+            font-size: 0.75rem; 
+            opacity: 0.5; 
+            font-family: 'Orbitron'; 
+            letter-spacing: 2px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="nav-header">
+        <a href="index.html" class="nav-back">← OYUNA DÖN</a>
+        <div style="font-family: 'Orbitron'; color: var(--primary); font-size: 0.8rem; letter-spacing: 1px;">HEDEF 100 BLOG</div>
+    </header>
+
+<article class="blog-content">
+    <!-- İÇERİK BAŞLANGICI -->
+    <h1>Hedef 100'de Asla Yapmamanız Gereken 3 Kritik Hata</h1>
+    
+    <div class="meta-info">
+        <span>📅 1 Mayıs 2026</span>
+        <span>✍️ Uzm. Dr. Yasin Yıldız</span>
+        <span>⏱️ 5 dk okuma</span>
+    </div>
+
+    <p>Hedef 100, dışarıdan bakıldığında basit bir sayı yerleştirme oyunu gibi görünse de aslında derin bir matematiksel algoritma ve öngörü gerektirir. Birçok oyuncu ilk 50 kareyi hızla doldururken, sonrasında aniden "çıkmaz sokağa" girdiğini fark eder. Peki, neden tıkanıyoruz? İşte oyun performansınızı artıracak ve 100 hedefine ulaşmanızı sağlayacak taktikler.</p>
+
+    <div class="highlight-box">
+        "Gerçek bir strateji uzmanı, sadece yaptığı hamleye değil, o hamlenin kapattığı ve açtığı yeni yollara odaklanır."
+    </div>
+
+    <h2>1. Merkeze Hapsolmak: En Büyük Tuzak</h2>
+    <p>Yeni başlayan oyuncuların yaptığı en yaygın hata, oyuna merkezden başlayıp rastgele dışarıya açılmaya çalışmaktır. Oysa Hedef 100 ızgarasında en değerli alanlar köşeler ve kenarlardır[cite: 3]. Merkeze hapsolduğunuzda, dışarıdaki boş karelere ulaşmak için gereken "zıplama mesafesini" kaybedersiniz. Stratejiniz daima dış çeperden merkeze doğru bir sarmal oluşturmak olmalıdır.</p>
+
+    <h2>2. Çapraz ve Düz Hamle Dengesi</h2>
+    <p>Oyunda yatay/dikeyde 3 kare, çaprazda ise 2 kare kuralı bulunur[cite: 3]. Birçok oyuncu sadece düz hamlelere odaklanarak çapraz geçişleri göz ardı eder. Bu durum, ızgaranın belirli bölgelerinin "izole" kalmasına neden olur. İzole kalan bir kareye oyunun sonunda geri dönmek neredeyse imkansızdır. Her hamlenizde kendinize şu soruyu sorun: "Bu hamleyle ulaşamayacağım bir bölge bıraktım mı?"</p>
+
+    <img src="https://acil42.com/wp-content/uploads/2026/05/blog-gorsel-2.jpg" alt="Hedef 100 Oyun Taktikleri">
+
+    <h2>3. Aceleci Kararlar ve Geri Al Butonu</h2>
+    <p>Hedef 100'de skorunuz arttıkça seçenekleriniz azalır. İlk hamlelerde yapılan plansız zıplamalar, 80. kareden sonra oyunun bitmesine neden olur. Oyundaki "Geri Al" hakkınızı sadece yanlış tıkladığınızda değil, bir yolun tıkandığını hissettiğinizde stratejik bir manevra olarak kullanın[cite: 3]. Ancak unutmayın, en iyi oyuncu hiç geri al yapmadan 100'e ulaşan oyuncudur.</p>
+
+    <h2>Altın İpucu: Kendi Rotanı Çiz</h2>
+    <p>Her oyun yeni bir ihtimal demektir. Kendi imzanız haline gelecek bir başlangıç rotası belirleyin. Köşeleri erkenden kapatmak, size oyunun sonunda manevra yapacak geniş bir alan bırakacaktır[cite: 5]. Analitik düşünme kaslarınızı çalıştırın ve ızgarayı bir bütün olarak görmeye odaklanın.</p>
+
+    <p>Unutmayın, Hedef 100 sadece bir oyun değil; sabır, dikkat ve stratejinin mükemmel bir birleşimidir[cite: 3].</p>
+
+    <div class="cta-container">
+        <p style="margin-bottom: 20px; font-family: 'Orbitron'; font-size: 0.9rem;">Bu taktikleri denemeye hazır mısın?</p>
+        <a href="index.html" class="cta-btn">HEMEN YENİ OYUN BAŞLAT!</a>
+    </div>
+</article>    <footer class="footer">
+        © 2026 HEDEF100.COM | TÜM HAKLARI SAKLIDIR.
+    </footer>
+
+</body>
+</html>

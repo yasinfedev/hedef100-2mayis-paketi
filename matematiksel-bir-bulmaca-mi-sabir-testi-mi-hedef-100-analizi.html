@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Yazı Başlığı | Hedef 100</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --primary: #38bdf8; 
+            --accent: #f472b6; 
+            --bg: #0f172a; 
+            --card: #1e293b; 
+            --text: #f1f5f9; 
+            --success: #22c55e;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            background-color: var(--bg); 
+            color: var(--text); 
+            font-family: 'Poppins', sans-serif; 
+            line-height: 1.8; 
+            padding: 20px; 
+            max-width: 800px; 
+            margin: 0 auto; 
+        }
+        
+        /* Üst Menü */
+        .nav-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 40px; 
+            border-bottom: 1px solid rgba(56, 189, 248, 0.2); 
+            padding-bottom: 20px; 
+        }
+        
+        .nav-back { 
+            color: var(--accent); 
+            text-decoration: none; 
+            font-family: 'Orbitron'; 
+            font-size: 0.8rem; 
+            font-weight: bold; 
+            transition: 0.3s;
+        }
+        
+        .nav-back:hover { opacity: 0.8; transform: translateX(-5px); }
+        
+        /* İçerik Yapısı */
+        h1 { 
+            font-family: 'Orbitron'; 
+            color: var(--primary); 
+            font-size: 2rem; 
+            line-height: 1.3; 
+            margin-bottom: 15px; 
+            letter-spacing: 1px;
+        }
+        
+        .meta-info { 
+            font-size: 0.8rem; 
+            opacity: 0.6; 
+            margin-bottom: 40px; 
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 20px; 
+            border-left: 2px solid var(--accent);
+            padding-left: 15px;
+        }
+        
+        .blog-content { font-size: 1.05rem; }
+        
+        .blog-content h2 { 
+            color: var(--primary); 
+            font-size: 1.5rem; 
+            margin: 40px 0 20px 0; 
+            font-family: 'Orbitron'; 
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding-bottom: 10px;
+        }
+        
+        .blog-content p { margin-bottom: 25px; font-weight: 300; }
+        
+        .blog-content img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 15px; 
+            margin: 30px 0; 
+            border: 1px solid rgba(56, 189, 248, 0.2); 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        /* Vurgu Kutusu */
+        .highlight-box { 
+            background: rgba(56, 189, 248, 0.05); 
+            border-left: 4px solid var(--primary); 
+            padding: 25px; 
+            border-radius: 0 15px 15px 0; 
+            margin: 35px 0; 
+            font-style: italic;
+            color: var(--primary);
+        }
+        
+        /* CTA Butonu */
+        .cta-container {
+            margin-top: 60px;
+            padding: 40px;
+            background: var(--card);
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(56, 189, 248, 0.1);
+        }
+        
+        .cta-btn { 
+            display: inline-block; 
+            background: var(--success); 
+            color: white; 
+            text-align: center; 
+            padding: 18px 35px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-family: 'Orbitron'; 
+            font-weight: bold; 
+            font-size: 1rem;
+            transition: 0.3s; 
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+        }
+        
+        .cta-btn:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
+            filter: brightness(1.1); 
+        }
+
+        .footer { 
+            margin: 80px 0 40px 0; 
+            text-align: center; 
+            font-size: 0.75rem; 
+            opacity: 0.5; 
+            font-family: 'Orbitron'; 
+            letter-spacing: 2px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="nav-header">
+        <a href="index.html" class="nav-back">← OYUNA DÖN</a>
+        <div style="font-family: 'Orbitron'; color: var(--primary); font-size: 0.8rem; letter-spacing: 1px;">HEDEF 100 BLOG</div>
+    </header>
+
+<article class="blog-content">
+    <!-- İÇERİK BAŞLANGICI -->
+    <h1>Matematiksel Bir Bulmaca mı, Sabır Testi mi? Hedef 100 Analizi</h1>
+    
+    <div class="meta-info">
+        <span>📅 2 Mayıs 2026</span>
+        <span>✍️ Uzm. Dr. Yasin Yıldız</span>
+        <span>⏱️ 5 dk okuma</span>
+    </div>
+
+    <p>Bazı oyunlar sadece reflekslerinizi test eder, bazıları ise hızınızı. Ancak <strong>Hedef 100</strong>, oyuncuyu çok daha derin bir sorgulamanın eşiğine bırakır: Bu oyun saf bir matematiksel algoritma mı, yoksa modern bir sabır testi mi? İlk bakışta 10x10'luk bir ızgara üzerinde zıplayarak ilerlemek basit görünse de, 100 kareye ulaşma çabası aslında zihinsel bir dayanıklılık hikayesidir[cite: 3].</p>
+
+    <div class="highlight-box">
+        "Matematik olasılıkları hesaplar, ancak sabır o olasılıkların gerçekleşmesi için gereken sükuneti sağlar."
+    </div>
+
+    <h2>Olasılıkların Matematiği</h2>
+    <p>Matematiksel açıdan bakıldığında Hedef 100, "Hamilton Yolu Problemi"nin (Hamiltonian Path Problem) bir varyasyonu olarak görülebilir. Her hamlede yatay/dikeyde 3 veya çaprazda 2 kare zıplama kuralı[cite: 3], ızgara üzerinde milyarlarca farklı kombinasyon oluşturur. Her tıklama, aslında bir olasılıklar ağacını daraltmak demektir. Bu yüzden oyunun ilk yarısı matematiksel bir özgürlük sunarken, ikinci yarısı katı bir mantık disiplinine dönüşür[cite: 3].</p>
+
+    <h2>Zihinsel Bir Sabır Testi</h2>
+    <p>Oyunun 80. karesine geldiğinizde, geride bıraktığınız boş kareler size bir hata yaptığınızı fısıldamaya başlar. İşte burası, oyunun bir sabır testine dönüştüğü andır. Aceleci bir karar, tüm emeğin 90'larda son bulmasına neden olabilir. Hedef 100, oyuncuya "durmayı, bakmayı ve tüm sahayı görmeyi" öğretir[cite: 3]. Usta oyuncular, en dar alanlarda bile sakin kalarak doğru çıkış yolunu bulabilenlerdir[cite: 3].</p>
+
+    <img src="https://acil42.com/wp-content/uploads/2026/05/blog-gorsel-9.jpg" alt="Zeka ve Sabır Analizi">
+
+    <h2>Neden Bu Kadar Bağımlılık Yapıyor?</h2>
+    <p>İnsan zihni yarım kalmış işleri tamamlamaya odaklıdır (Zeigarnik Etkisi). Izgara üzerinde kalan son birkaç boş kare, beyni o boşluğu doldurmaya iter. Her oyun bittiğinde çıkan skor ve "Top 5" listesi[cite: 3], oyuncuyu bir sonrakinde daha sabırlı ve daha stratejik olmaya teşvik eder[cite: 3]. Bu döngü, oyunun hem bir zeka geliştirici hem de bir karakter disiplini aracı olmasını sağlar.</p>
+
+    <h2>Final Analizi: İkisi de!</h2>
+    <p>Hedef 100 ne sadece matematiktir ne de sadece sabır. O, bu iki kavramın mükemmel bir dansıdır. Doğru stratejiyi kurmak için matematik, o stratejiyi sonuna kadar sürdürmek içinse sabır gerekir[cite: 3]. 100 tam puanı alan bir oyuncu, aslında sadece bir oyunu bitirmiş olmaz; zihninin bu iki büyük gücünü birleştirmeyi başarmış demektir[cite: 3].</p>
+
+    <p>Sizin için hangisi daha zor: Doğru algoritmayı kurmak mı, yoksa sonuna kadar sabretmek mi?[cite: 3]</p>
+
+    <div class="cta-container">
+        <p style="margin-bottom: 20px; font-family: 'Orbitron'; font-size: 0.9rem;">Kendi analizinizi sahada yapın!</p>
+        <a href="index.html" class="cta-btn">ANALİZE VE OYUNA BAŞLA!</a>
+    </div>
+</article>
+
+<footer class="footer">
+        © 2026 HEDEF100.COM | TÜM HAKLARI SAKLIDIR.
+    </footer>
+
+</body>
+</html>
